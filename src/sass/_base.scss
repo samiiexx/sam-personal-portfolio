@@ -1,150 +1,150 @@
-:root {
-    font-size: 16px;
-}
+// :root {
+//     font-size: 16px;
+// }
 
-body {
-    font-family: $font-family;
-    font-weight: $font-normal;
-    color: $dark;
-    line-height: 1.35;
-}
+// body {
+//     font-family: $font-family;
+//     font-weight: $font-normal;
+//     color: $dark;
+//     line-height: 1.35;
+// }
 
-a {
-    text-decoration: none;
-    color: $dark;
-}
+// a {
+//     text-decoration: none;
+//     color: $dark;
+// }
 
-html {
-    scroll-behavior: smooth;
-    font-size: 18px;
-    @include media-min("xl") {
-        font-size: 16px;
-    }
-}
+// html {
+//     scroll-behavior: smooth;
+//     font-size: 18px;
+//     @include media-min("xl") {
+//         font-size: 16px;
+//     }
+// }
 
-.section-title {
-    text-transform: uppercase;
-    @include media-max("md") {
-        font-size: 1.5rem;
-    }
-}
+// .section-title {
+//     text-transform: uppercase;
+//     @include media-max("md") {
+//         font-size: 1.5rem;
+//     }
+// }
 
-/*=============================================
-=            Header            =
-=============================================*/
+// /*=============================================
+// =            Header            =
+// =============================================*/
 
-// Navigation
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
+// // Navigation
+// .nav {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-start;
+// }
 
-.logo {
-    width: auto;
-    height: 3.5rem;
-    @include media-min("md") {
-        height: 4rem;
-    }
-    @include media-min("xl") {
-        height: 5rem;
-    }
-}
+// .logo {
+//     width: auto;
+//     height: 3.5rem;
+//     @include media-min("md") {
+//         height: 4rem;
+//     }
+//     @include media-min("xl") {
+//         height: 5rem;
+//     }
+// }
 
-.home-link {
-    display: none;
-    @include media-max("md") {
-        display: block;
-    }
-}
+// .home-link {
+//     display: none;
+//     @include media-max("md") {
+//         display: block;
+//     }
+// }
 
-.hamburger-menu {
-    display: none;
-    @include media-max("md") {
-        cursor: pointer;
-        position: relative;
-        z-index: 1500;
-        display: block;
-    }
-    .feather-x {
-        @include media-max("md") {
-            display: none;
-        }
-    }
-}
+// .hamburger-menu {
+//     display: none;
+//     @include media-max("md") {
+//         cursor: pointer;
+//         position: relative;
+//         z-index: 1500;
+//         display: block;
+//     }
+//     .feather-x {
+//         @include media-max("md") {
+//             display: none;
+//         }
+//     }
+// }
 
-.menu-open .hamburger-menu .feather-x {
-    @include media-max("md") {
-        display: block;
-    }
-}
+// .menu-open .hamburger-menu .feather-x {
+//     @include media-max("md") {
+//         display: block;
+//     }
+// }
 
-.menu-open .hamburger-menu .feather-menu {
-    @include media-max("md") {
-        display: none;
-    }
-}
+// .menu-open .hamburger-menu .feather-menu {
+//     @include media-max("md") {
+//         display: none;
+//     }
+// }
 
-.nav-list {
-    list-style-type: none;
-    display: inherit;
-    position: relative;
-    flex-direction: row;
-    justify-content: initial;
-    opacity: 1;
-    transform: scale(1);
-    @include media-max("md") {
-        @include flex(center);
-        flex-direction: column;
-        opacity: 0;
-        transition: opacity $normal;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1400;
-        transform: scale(0);
-        background-color: $dark;
-        overflow: hidden;
-    }
-}
+// .nav-list {
+//     list-style-type: none;
+//     display: inherit;
+//     position: relative;
+//     flex-direction: row;
+//     justify-content: initial;
+//     opacity: 1;
+//     transform: scale(1);
+//     @include media-max("md") {
+//         @include flex(center);
+//         flex-direction: column;
+//         opacity: 0;
+//         transition: opacity $normal;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         z-index: 1400;
+//         transform: scale(0);
+//         background-color: $dark;
+//         overflow: hidden;
+//     }
+// }
 
-.menu-open .nav-list {
-    @include media-max("md") {
-        padding-left: 0;
-        opacity: 1;
-        transform: scale(1);
-    }
-}
+// .menu-open .nav-list {
+//     @include media-max("md") {
+//         padding-left: 0;
+//         opacity: 1;
+//         transform: scale(1);
+//     }
+// }
 
-.nav-link {
-    text-transform: capitalize;
-    padding-bottom: 0.25rem;
-    color: $secondary;
-    transition: color $normal;
-    font-weight: $font-normal;
-    @include media-max("md") {
-        display: block;
-        color: $secondary;
-        font-family: $font-header;
-        font-size: 2rem;
-        padding: 1rem 0 0.2rem;
-        text-transform: capitalize;
-    }
-    &:hover {
-        color: $primary;
-        transition: all $normal;
-    }
-}
+// .nav-link {
+//     text-transform: capitalize;
+//     padding-bottom: 0.25rem;
+//     color: $secondary;
+//     transition: color $normal;
+//     font-weight: $font-normal;
+//     @include media-max("md") {
+//         display: block;
+//         color: $secondary;
+//         font-family: $font-header;
+//         font-size: 2rem;
+//         padding: 1rem 0 0.2rem;
+//         text-transform: capitalize;
+//     }
+//     &:hover {
+//         color: $primary;
+//         transition: all $normal;
+//     }
+// }
 
-.active {
-    border-top: 8px solid $primary;
-    padding-top: 1.8rem;
-    @include media-max("md") {
-        border-top: 0px solid $primary;
-        padding-top: 0;
-    }
-}
+// .active {
+//     border-top: 8px solid $primary;
+//     padding-top: 1.8rem;
+//     @include media-max("md") {
+//         border-top: 0px solid $primary;
+//         padding-top: 0;
+//     }
+// }
 
-/*=====  End of Header  ======*/
+// /*=====  End of Header  ======*/
