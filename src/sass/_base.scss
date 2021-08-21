@@ -74,6 +74,13 @@ html {
 
 .hamburger-menu {
     display: none;
+    .feather {
+        stroke-width: 2;
+        stroke: #04b8d0;
+        width: 48px;
+        height: 48px;
+    }
+
     @include media-max("md") {
         cursor: pointer;
         position: relative;
@@ -267,6 +274,9 @@ html {
     &:hover {
         animation: bounce 0.5s ease;
     }
+    @include media-max("md") {
+        display: none;
+    }
 }
 @keyframes bounce {
     0% {
@@ -287,8 +297,51 @@ html {
 /*=============================================
 =            Footer            =
 =============================================*/
+// Contact Form
+
+.fieldset {
+    background-color: lighten($grey, 60%);
+    border: solid 1px $grey;
+    border-radius: 6px;
+    width: 80%;
+    min-width: 300px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    font-size: 1.3rem;
+}
+
+input {
+    border: solid 1px $grey;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+textarea {
+    min-height: 8rem;
+    min-width: 100%;
+    border: solid 1px $grey;
+    margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: solid 1px $primary;
+    box-shadow: 0 0 5px $primary;
+}
+
+.btn-form {
+    width: 100%;
+}
+
+// Footer styles
 .footer {
     text-align: center;
+    @include flex(center);
 }
 
 .footer-title {

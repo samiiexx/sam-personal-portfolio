@@ -6,6 +6,9 @@
     margin: 0 auto;
     max-width: $xl;
     // padding: 0 1rem;
+    @include media-max("md") {
+        padding: 0 1rem;
+    }
 }
 
 .container-lg {
