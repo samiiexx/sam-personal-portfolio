@@ -1,5 +1,5 @@
 # Personal Portfolio
-This portfolio showcases my experience as well as the work I've done.
+This is a sample of my personal portfolio.
 
 ![Personal Portfolio](screenshot.jpg)
 
