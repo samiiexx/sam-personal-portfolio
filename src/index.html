@@ -10,97 +10,371 @@
 
     <body>
         <div class="container">
-            <header class="header">
-                <nav class="nav py-1">
-                    <a href="#"
-                        ><img
-                            src="images/logo.png"
-                            alt="Favour's Logo"
-                            class="logo"
-                    /></a>
+            <nav class="nav py-1">
+                <a href="#"
+                    ><img
+                        src="images/logo.png"
+                        alt="Favour's Logo"
+                        class="logo"
+                /></a>
 
-                    <div class="hamburger-menu">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="32"
-                            height="32"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="feather feather-menu"
+                <div class="hamburger-menu">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-menu"
+                    >
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-x"
+                    >
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item p-1">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <header class="header py-5">
+                <div class="personal-information">
+                    <h1 class="title">
+                        Favour <br />
+                        Samuel
+                    </h1>
+                    <h2 class="subtitle">
+                        Freelance Frontend Developer <br />
+                        based in Abuja, Nigeria.
+                    </h2>
+                   <a href="mailto:sfchidimma@gmail.com" class="btn hero-btn btn-primary">Hire Me</a>
+                        
+                </div>
+
+                <ul class="social-links">
+                    <li class="list-item">
+                        <a
+                            class="social-icon py-1"
+                            href="https://www.instagram.com/favoursamuel_/"
                         >
-                            <line x1="3" y1="12" x2="21" y2="12"></line>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <line x1="3" y1="18" x2="21" y2="18"></line>
-                        </svg>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="32"
-                            height="32"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            class="feather feather-x"
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="72"
+                                height="72"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-instagram"
+                            >
+                                <rect
+                                    x="2"
+                                    y="2"
+                                    width="20"
+                                    height="20"
+                                    rx="5"
+                                    ry="5"
+                                ></rect>
+                                <path
+                                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                                ></path>
+                                <line
+                                    x1="17.5"
+                                    y1="6.5"
+                                    x2="17.51"
+                                    y2="6.5"
+                                ></line>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="list-item">
+                        <a
+                            class="social-icon py-1"
+                            href="https://www.linkedin.com/in/favour-samuel/"
                         >
-                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                        </svg>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="72"
+                                height="72"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-color="#fff"
+                                class="feather feather-linkedin"
+                            >
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                ></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="list-item">
+                        <a
+                            class="social-icon py-1"
+                            href="https://github.com/samiiexx"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="72"
+                                height="72"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-github"
+                            >
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                ></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+
+            <section class="skills py-5" id="skills">
+                <h2 class="h2 skills-title">My Skills</h2>
+
+                <ul class="skills-group">
+                    <li class="list-item">
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                        >
+                            <img
+                                src="images/html5.png"
+                                alt=""
+                                class="skills-img"
+                            />
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                        >
+                            <img
+                                src="images/css3.png"
+                                alt=""
+                                class="skills-img"
+                            />
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                        >
+                            <img
+                                src="images/javascript.png"
+                                alt=""
+                                class="skills-img"
+                            />
+                        </a>
+                    </li>
+                            />
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a
+                            href="https://sass-lang.com/documentation"
+                        >
+                            <img
+                                src="images/sass.svg"
+                                alt=""
+                                class="skills-img"
+                            />
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://getbootstrap.com/">
+                            <img
+                                src="images/bootstrap.png"
+                                alt=""
+                                class="skills-img"
+                            />
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://docs.github.com/en">
+                            <img
+                                src="images/github.png"
+                                alt=""
+                                class="skills-img"
+                            />
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://gulpjs.com/">
+                            <img
+                                src="images/gulp.png"
+                                alt=""
+                                class="skills-img"
+                            />
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://greensock.com/gsap/">
+                            <img
+                                src="images/gsap.svg"
+                                alt=""
+                                class="skills-img"
+                            />
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="contact py-5" id="contact">
+                <div class="contact-content">
+                    <div class="inquiry">
+                        <h2 class="h2 contact-title">Work Inquiry</h2>
+                        <p class="contact-text">
+                            Message me and let's create magic together
+                        </p>
                     </div>
 
-                    <ul class="nav-list">
-                        <li class="nav-item p-1">
-                            <a href="#home" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item p-1">
-                            <a href="#work" class="nav-link">Work</a>
-                        </li>
-                        <li class="nav-item p-1" id="contact">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="personal-information">
-                    <h1 class="title">Favour Samuel</h1>
-                    <h2 class="subtitle">
-                        Freelance Frontend Developer based in Abuja, Nigeria.
-                    </h2>
-                    <button class="btn">Hire Me</button>
+                     <a href="https://github.com/samiiexx" class="chat-btn btn-secondary">
+                        See projects!</a>
                 </div>
+            </section>
 
-                <div class="social-media">
-                    <ul class="social-links">
-                        <li class="list-item">
-                            <a class="social-icon py-1" href=""> </a>
-                        </li>
-                    </ul>
-                </div>
-            </header>
+            <footer class="footer py-5">
+                <h3 class="footer-title">Stay Connected</h3>
+                <p class="location">Abuja, Nigeria</p>
+                <p class="email">
+                    <a href="mailto:sfchidimma@gmail.com"
+                        >sfchidimma@gmail.com</a
+                    >
+                </p>
+
+                <ul class="social-links footer-social-links">
+                    <li class="list-item">
+                        <a
+                            class="social-icon py-1"
+                            href="https://www.instagram.com/favoursamuel_/"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-instagram"
+                            >
+                                <rect
+                                    x="2"
+                                    y="2"
+                                    width="20"
+                                    height="20"
+                                    rx="5"
+                                    ry="5"
+                                ></rect>
+                                <path
+                                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                                ></path>
+                                <line
+                                    x1="17.5"
+                                    y1="6.5"
+                                    x2="17.51"
+                                    y2="6.5"
+                                ></line>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="list-item">
+                        <a
+                            class="social-icon py-1"
+                            href="https://www.linkedin.com/in/favour-samuel/"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-linkedin"
+                            >
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                ></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="list-item">
+                        <a
+                            class="social-icon py-1"
+                            href="https://github.com/samiiexx"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-github"
+                            >
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                ></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
         </div>
-
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-instagram"
-        >
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-        </svg>
-
         <script src="js/index.js"></script>
     </body>
 </html>

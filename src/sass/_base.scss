@@ -1,150 +1,323 @@
-// :root {
-//     font-size: 16px;
-// }
+:root {
+    font-size: 16px;
+}
 
-// body {
-//     font-family: $font-family;
-//     font-weight: $font-normal;
-//     color: $dark;
-//     line-height: 1.35;
-// }
+body {
+    font-family: $font-family;
+    font-weight: $font-normal;
+    color: darken($secondary, 15);
+    line-height: 1.35;
+    background-color: rgba($primary, 0.1);
+}
 
-// a {
-//     text-decoration: none;
-//     color: $dark;
-// }
+.container {
+    background-color: #f0f0f0;
+}
 
-// html {
-//     scroll-behavior: smooth;
-//     font-size: 18px;
-//     @include media-min("xl") {
-//         font-size: 16px;
-//     }
-// }
+a {
+    text-decoration: none;
+    color: darken($secondary, 15);
+}
 
-// .section-title {
-//     text-transform: uppercase;
-//     @include media-max("md") {
-//         font-size: 1.5rem;
-//     }
-// }
+html {
+    scroll-behavior: smooth;
+    font-size: 18px;
+    @include media-min("xl") {
+        font-size: 16px;
+    }
+}
 
-// /*=============================================
-// =            Header            =
-// =============================================*/
+.section-title {
+    text-transform: capitalize;
+    @include media-max("md") {
+        font-size: 1.5rem;
+    }
+}
 
-// // Navigation
-// .nav {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: flex-start;
-// }
+.feather {
+    stroke: #fff;
+    stroke-width: 1;
+    fill: #04b8d0;
+}
 
-// .logo {
-//     width: auto;
-//     height: 3.5rem;
-//     @include media-min("md") {
-//         height: 4rem;
-//     }
-//     @include media-min("xl") {
-//         height: 5rem;
-//     }
-// }
+.h2 {
+    font-size: 3rem;
+    color: $secondary;
+}
 
-// .home-link {
-//     display: none;
-//     @include media-max("md") {
-//         display: block;
-//     }
-// }
+/*=============================================
+=            Navigation           =
+=============================================*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
-// .hamburger-menu {
-//     display: none;
-//     @include media-max("md") {
-//         cursor: pointer;
-//         position: relative;
-//         z-index: 1500;
-//         display: block;
-//     }
-//     .feather-x {
-//         @include media-max("md") {
-//             display: none;
-//         }
-//     }
-// }
+.logo {
+    width: auto;
+    height: 3.5rem;
+    @include media-min("md") {
+        height: 4rem;
+    }
+    @include media-min("xl") {
+        height: 5rem;
+    }
+}
 
-// .menu-open .hamburger-menu .feather-x {
-//     @include media-max("md") {
-//         display: block;
-//     }
-// }
+.home-link {
+    display: none;
+    @include media-max("md") {
+        display: block;
+    }
+}
 
-// .menu-open .hamburger-menu .feather-menu {
-//     @include media-max("md") {
-//         display: none;
-//     }
-// }
+.hamburger-menu {
+    display: none;
+    @include media-max("md") {
+        cursor: pointer;
+        position: relative;
+        z-index: 1500;
+        display: block;
+    }
+    .feather-x {
+        @include media-max("md") {
+            display: none;
+        }
+    }
+}
 
-// .nav-list {
-//     list-style-type: none;
-//     display: inherit;
-//     position: relative;
-//     flex-direction: row;
-//     justify-content: initial;
-//     opacity: 1;
-//     transform: scale(1);
-//     @include media-max("md") {
-//         @include flex(center);
-//         flex-direction: column;
-//         opacity: 0;
-//         transition: opacity $normal;
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 100%;
-//         height: 100%;
-//         z-index: 1400;
-//         transform: scale(0);
-//         background-color: $dark;
-//         overflow: hidden;
-//     }
-// }
+.menu-open .hamburger-menu .feather-x {
+    @include media-max("md") {
+        display: block;
+    }
+}
 
-// .menu-open .nav-list {
-//     @include media-max("md") {
-//         padding-left: 0;
-//         opacity: 1;
-//         transform: scale(1);
-//     }
-// }
+.menu-open .hamburger-menu .feather-menu {
+    @include media-max("md") {
+        display: none;
+    }
+}
 
-// .nav-link {
-//     text-transform: capitalize;
-//     padding-bottom: 0.25rem;
-//     color: $secondary;
-//     transition: color $normal;
-//     font-weight: $font-normal;
-//     @include media-max("md") {
-//         display: block;
-//         color: $secondary;
-//         font-family: $font-header;
-//         font-size: 2rem;
-//         padding: 1rem 0 0.2rem;
-//         text-transform: capitalize;
-//     }
-//     &:hover {
-//         color: $primary;
-//         transition: all $normal;
-//     }
-// }
+.nav-list {
+    list-style-type: none;
+    display: inherit;
+    position: relative;
+    flex-direction: row;
+    justify-content: initial;
+    opacity: 1;
+    transform: scale(1);
+    @include media-max("md") {
+        @include flex(center);
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity $normal;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1400;
+        transform: scale(0);
+        background-color: $dark;
+        overflow: hidden;
+    }
+}
 
-// .active {
-//     border-top: 8px solid $primary;
-//     padding-top: 1.8rem;
-//     @include media-max("md") {
-//         border-top: 0px solid $primary;
-//         padding-top: 0;
-//     }
-// }
+.menu-open .nav-list {
+    @include media-max("md") {
+        padding-left: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
-// /*=====  End of Header  ======*/
+.nav-link {
+    text-transform: capitalize;
+    padding-bottom: 0.25rem;
+    color: $secondary;
+    transition: color $normal;
+    font-weight: $font-normal;
+    @include media-max("md") {
+        display: block;
+        color: $secondary;
+        font-size: 2rem;
+        padding: 1rem 0 0.2rem;
+        text-transform: capitalize;
+    }
+    &:hover {
+        color: $primary;
+        transition: all $normal;
+    }
+}
+
+/*=====  End of Navigation ======*/
+
+/*=============================================
+=            Header            =
+=============================================*/
+
+.header {
+    @include flex;
+    height: 85vh;
+    position: relative;
+    &::after {
+        position: absolute;
+        bottom: 0rem;
+        right: 0rem;
+        content: "";
+        width: 40rem;
+        height: 40rem;
+        background-color: rgba($primary, 0.1);
+        border-radius: 40rem 0 0 0;
+    }
+}
+
+.title {
+    font-size: 6rem;
+    color: darken($primary, 15);
+    line-height: 80px;
+}
+
+.subtitle {
+    font-size: 3rem;
+    color: darken($secondary, 15);
+    margin: 2rem 0;
+}
+
+.hero-btn {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.header .social-links {
+    margin-right: 6rem;
+    margin-top: auto;
+    z-index: 2;
+}
+
+/*=====  End of Header  ======*/
+
+/*=============================================
+=            Skills            =
+=============================================*/
+.skills {
+    position: relative;
+    &::after {
+        position: absolute;
+        bottom: 0rem;
+        left: 0rem;
+        content: "";
+        width: 30rem;
+        height: 30rem;
+        background-color: rgba($primary, 0.1);
+        border-radius: 0 30rem 0 0;
+    }
+}
+
+.skills-title {
+    font-size: 4rem;
+    color: darken($secondary, 15);
+    text-align: center;
+}
+
+.skills-group {
+    @include flex(space-around);
+    flex-wrap: wrap;
+    height: 100%;
+    & > * {
+        z-index: 2;
+        margin: 1rem;
+    }
+}
+
+.skills-img {
+    height: 200px;
+    width: auto;
+}
+
+/*=====  End of Skills  ======*/
+
+/*=============================================
+=            Contact Section            =
+=============================================*/
+.contact {
+    background-color: rgba($secondary, 0.3);
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.contact-title {
+    font-size: 4rem;
+    color: darken($secondary, 15);
+}
+
+.contact-content {
+    @include flex;
+}
+
+.contact-text {
+    font-size: 2rem;
+}
+
+.chat-btn {
+    padding: 2rem;
+    font-size: 2rem;
+    &:hover {
+        animation: bounce 0.5s ease;
+    }
+}
+@keyframes bounce {
+    0% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(-20px);
+    }
+    60% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+/*=====  End of Contact Section  ======*/
+
+/*=============================================
+=            Footer            =
+=============================================*/
+.footer {
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.location {
+    color: #aaa;
+}
+
+.email {
+    color: #aaa;
+    font-size: 2rem;
+}
+
+.footer-social-links {
+    @include flex(center);
+    margin-top: 2rem;
+    & .feather {
+        stroke: $secondary;
+        fill: #fff;
+        width: 64px;
+        height: 64px;
+        background-color: rgba($secondary, 0.3);
+        border-radius: 64px;
+        margin: 0.5rem;
+        padding: 12px;
+    }
+}
+
+/*=====  End of Footer  ======*/
